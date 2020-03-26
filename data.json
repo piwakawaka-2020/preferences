@@ -1,32 +1,32 @@
 {
-"people": [
+  "people": [
     {
-        "name": "Thomas",
-        "drink": "Coffee",
-        "sugars": 1,
-        "milk": 1,
-        "image": "/images/default.jpg"
+      "name": "Thomas",
+      "drink": "Coffee",
+      "sugars": 1,
+      "milk": 1,
+      "image": "/images/default.jpg"
     },
     {
-        "name": "Richard",
-        "drink": "Hot Chocolate",
-        "sugars": 2,
-        "milk": 1,
-        "image": "/images/default.jpg"
+      "name": "Rich",
+      "drink": "Four Loco",
+      "sugars": 0,
+      "milk": 0,
+      "image": "/images/default.jpg"
     },
     {
-        "name": "Kim",
-        "drink": "Vodka",
-        "sugars": 5,
-        "milk": 0,
-        "image": "/images/default.jpg"
+      "name": "Kim",
+      "drink": "Vodka",
+      "sugars": 5,
+      "milk": 0,
+      "image": "/images/default.jpg"
     },
     {
-        "name": "Marni",
-        "drink": "Camomile",
-        "sugars": 0,
-        "milk": 0,
-        "image": "/images/default.jpg"
+      "name": "Marni",
+      "drink": "Camomile",
+      "sugars": 0,
+      "milk": 0,
+      "image": "/images/default.jpg"
     }
-]
+  ]
 }

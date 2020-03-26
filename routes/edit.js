@@ -15,7 +15,8 @@ router.get('/:name', (req, res) => {
             name: currentUser.name,
             drink: currentUser.drink,
             sugars: currentUser.sugars,
-            milk: currentUser.milk
+            milk: currentUser.milk,
+            image: currentUser.image
         }
     
         res.render(view, viewData)
@@ -34,7 +35,8 @@ router.post('/:name', (req, res) => {
                     name: req.body.name,
                     drink: req.body.drink,
                     sugars: Number(req.body.sugars),
-                    milk: Number(req.body.milk)
+                    milk: Number(req.body.milk),
+                    image: req.body.image
                 }
             }
         })
