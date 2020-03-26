@@ -9,7 +9,8 @@ router.get('/:name', (req, res) => {
         if(err) throw err
         const users = JSON.parse(data)
         const userName = req.params.name
-        users.find(user => user.name === userName)
+        console.log(users)
+        users.people.find(user => user.name === userName)
         
         const viewData = {
             name: userName,
