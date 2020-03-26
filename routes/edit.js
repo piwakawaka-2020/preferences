@@ -44,7 +44,7 @@ router.post('/:name', (req, res) => {
             if (err) console.log('An error has occurred')
         })
     })
-    res.redirect(`/edit/${req.body.name}`)
+    res.redirect(`/profile/${req.body.name}`)
 })
 
 
