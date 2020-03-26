@@ -1,1 +1,21 @@
-Index test
+<div class="container">
+    <p>Welcome to our database of drink preferences!</p>
+    <p>Enter your name below to add to the list of people on the site!</p>
+    <form method="POST" action="/">
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="drink">Your drink of choice:</label>
+        <input type="text" id="drink" name="drink"><br>
+        <label for="sugars">How many sugars do you take:</label>
+        <input type="text" id="sugars" name="sugars"><br>
+        <label for="milks">How much milk do you take:</label>
+        <input type="text" id="milks" name="milks"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h3>Profiles already on the site:</h3>
+    {{#each people}}
+    <div>
+        <p><a href="/profile/{{name}}">{{name}}</a> - {{drink}}</p>
+    </div>
+    {{/each}}
+</div>
