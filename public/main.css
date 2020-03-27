@@ -16,6 +16,22 @@ form {
     overflow-y: scroll;
     display: inline-block;
     height: 250px;
+    border: 3px brown solid;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* Scrollbar styles */
+
+#scroll::-webkit-scrollbar {
+    background-color: none;
+    border-radius: 10px;
+    width: 6px;
+}
+
+#scroll::-webkit-scrollbar-thumb {
+    background-color: brown;
+    border-radius: 10px;
 }
 
 input {
