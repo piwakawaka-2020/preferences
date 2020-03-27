@@ -38,7 +38,7 @@ router.post('/:id', (req, res) => {
             drink: req.body.drink,
             sugars: Number(req.body.sugars),
             milk: Number(req.body.milk),
-            image: req.body.image || '/images/default.jpg'
+            image: req.body.image || '/images/drinks.jpg'
         }
         
         const userJSON = JSON.stringify(users, null, 2)
