@@ -5,7 +5,7 @@ body {
     text-align: center;
 }
 
-form {
+.brownBorder {
     border: 3px brown solid;
     display: inline-block;
     padding: 5px;
@@ -14,11 +14,7 @@ form {
 
 #scroll {
     overflow-y: scroll;
-    display: inline-block;
     height: 200px;
-    border: 3px brown solid;
-    padding: 5px;
-    border-radius: 10px;
 }
 
 /* Scrollbar styles */
@@ -39,12 +35,8 @@ input {
 }
 
 .person {
-    border: 3px brown solid;
-    display: inline-block;
     font-size: 20px;
     margin: 5px;
-    padding: 5px;
-    border-radius: 10px;
 }
 
 .person:hover {
