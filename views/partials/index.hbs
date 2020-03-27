@@ -1,7 +1,7 @@
 <div class="container">
     <p>Welcome to our database of drink preferences!</p>
     <p>Enter your name below to add to the list of people on the site!</p>
-    <form method="POST" action="/">
+    <form class='brownBorder' method="POST" action="/">
         <label for="name">Your name:</label>
         <input type="text" id="name" name="name"><br>
         <label for="drink">Your drink of choice:</label>
@@ -13,9 +13,11 @@
         <input type="submit" value="Submit">
     </form>
     <h3>Profiles already on the site:</h3>
-    {{#each people}}
-    <div>
-        <p><a href="/profile/{{name}}">{{name}}</a> - {{drink}}</p>
+    <div class='brownBorder' id='scroll'>
+        {{#each people}}
+        <div>
+            <a href="/profile/{{name}}"><p class='person brownBorder'>{{name}} - {{drink}}</p></a>
+        </div>
+        {{/each}}
     </div>
-    {{/each}}
 </div>
