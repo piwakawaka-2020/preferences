@@ -1,36 +1,52 @@
 {
   "people": [
     {
-        "id": 1,
-        "name": "Thomas",
-        "drink": "Coffee",
-        "sugars": 1,
-        "milk": 1,
-        "image": "/images/drinks.jpg"
-    },
-    {   
-        "id": 2,
-        "name": "Richard",
-        "drink": "Hot Chocolate",
-        "sugars": 2,
-        "milk": 1,
-        "image": "/images/drinks.jpg"
+      "id": 1,
+      "name": "Thomas",
+      "drink": "Coffee",
+      "sugars": 1,
+      "milk": 1,
+      "image": "/images/drinks.jpg"
     },
     {
-        "id": 3,
-        "name": "Kim",
-        "drink": "Vodka",
-        "sugars": 5,
-        "milk": 0,
-        "image": "/images/drinks.jpg"
+      "id": 2,
+      "name": "Richard",
+      "drink": "Hot Chocolate",
+      "sugars": 2,
+      "milk": 1,
+      "image": "/images/drinks.jpg"
     },
     {
-        "id": 4,
-        "name": "Marni",
-        "drink": "Camomile",
-        "sugars": 0,
-        "Milk": 0,
-        "image": "/images/drinks.jpg"
+      "id": 3,
+      "name": "Kim",
+      "drink": "Vodka",
+      "sugars": 5,
+      "milk": 0,
+      "image": "/images/drinks.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Marni",
+      "drink": "Camomile",
+      "sugars": 0,
+      "Milk": 0,
+      "image": "/images/drinks.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Goodbyw",
+      "drink": "Universe",
+      "sugars": 1,
+      "milk": 1,
+      "image": "/images/default.jpg"
+    },
+    {
+      "id": 6,
+      "name": "",
+      "image": "/images/default.jpg",
+      "drink": "",
+      "sugars": "",
+      "milk": ""
     }
   ]
 }
