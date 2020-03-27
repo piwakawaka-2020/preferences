@@ -5,10 +5,14 @@ const fs = require('fs')
 const data = require('../data.json')
 
 router.get('/', (req, res) => {
-    const viewData = {
-        people: data.people 
-    }
-    res.render('partials/index.hbs', viewData)
+    fs.readFile('./data.json', 'utf8', (err, data) => {
+        data = JSON.parse(data)
+        if (err) console.log('An error has occurred')
+        const viewData = {
+            people: data.people 
+        }
+        res.render('partials/index.hbs', viewData)
+    })
 })
 
 router.post('/', (req, res) => {
@@ -19,17 +23,21 @@ router.post('/', (req, res) => {
         sugars: req.body.sugars,
         milk: req.body.milks
     }
-    data.people.push(newPerson)
-    const dataString = JSON.stringify(data, null, 2)
-    console.log(dataString)
-    fs.writeFile('../data.json', dataString, err => {
-        if (err) {
-            console.log('Error writing file', err)
-        } else {
-            console.log('Successfully wrote file')
-            res.redirect('/')
-        }
-    })
-})
+    fs.readFile('./data.json', 'utf8', (err, data) => {
+        if (err) console.log('An error has occurred')
+        data = JSON.parse(data)
+        data.people.push(newPerson)
+        const dataString = JSON.stringify(data, null, 2)
+        console.log(dataString)
+        fs.writeFile('./data.json', dataString, err => {
+            if (err) {
+                console.log('Error writing file', err)
+            } else {
+                console.log('Successfully wrote file')
+                res.redirect('/')
+            }
+        })
+    }
+)})
 
 module.exports = router
