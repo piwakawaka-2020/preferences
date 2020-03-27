@@ -20,4 +20,8 @@ router.get('/:name', (req, res) => {
     res.render('partials/profile.hbs', viewData)
 })
 
+
+
+
+
 module.exports = router
