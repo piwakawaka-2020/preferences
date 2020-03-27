@@ -36,7 +36,7 @@ router.post('/:name', (req, res) => {
                     drink: req.body.drink,
                     sugars: Number(req.body.sugars),
                     milk: Number(req.body.milk),
-                    image: req.body.image
+                    image: req.body.image || '/images/default.jpg'
                 }
             }
         })
@@ -45,8 +45,8 @@ router.post('/:name', (req, res) => {
         fs.writeFile('./data.json', userJSON, (err, _) => {
             if (err) console.log('An error has occurred')
         })
+        res.redirect(`/profile/${req.body.name}`)
     })
-    res.redirect(`/profile/${req.body.name}`)
 })
 
 
