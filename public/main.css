@@ -3,6 +3,7 @@
 body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     text-align: center;
+    background-color: beige;
 }
 
 .brownBorder {
@@ -10,6 +11,7 @@ body {
     display: inline-block;
     padding: 5px;
     border-radius: 10px;
+    background-color: rgb(233, 208, 140);
 }
 
 #scroll {
