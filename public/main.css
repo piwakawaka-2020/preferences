@@ -12,6 +12,12 @@ form {
     border-radius: 10px;
 }
 
+#scroll {
+    overflow-y: scroll;
+    display: inline-block;
+    height: 250px;
+}
+
 input {
     margin: 5px;
 }

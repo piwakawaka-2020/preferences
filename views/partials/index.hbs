@@ -13,9 +13,11 @@
         <input type="submit" value="Submit">
     </form>
     <h3>Profiles already on the site:</h3>
-    {{#each people}}
-    <div>
-        <a href="/profile/{{name}}"><p class='person'>{{name}} - {{drink}}</p></a>
-    </a>
-    {{/each}}
+    <div id='scroll'>
+        {{#each people}}
+        <div>
+            <a href="/profile/{{name}}"><p class='person'>{{name}} - {{drink}}</p></a>
+        </div>
+        {{/each}}
+    </div>
 </div>
