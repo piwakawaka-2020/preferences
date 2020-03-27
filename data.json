@@ -31,22 +31,6 @@
       "sugars": 0,
       "Milk": 0,
       "image": "/images/drinks.jpg"
-    },
-    {
-      "id": 5,
-      "name": "Goodbyw",
-      "drink": "Universe",
-      "sugars": 1,
-      "milk": 1,
-      "image": "/images/default.jpg"
-    },
-    {
-      "id": 6,
-      "name": "",
-      "image": "/images/default.jpg",
-      "drink": "",
-      "sugars": "",
-      "milk": ""
     }
   ]
 }

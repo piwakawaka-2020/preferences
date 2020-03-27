@@ -21,7 +21,7 @@ router.post('/', (req, res) => {
             const newPerson = {
                 id: userData.people.length + 1,
                 name: req.body.name,
-                image: "/images/default.jpg",
+                image: "/images/drinks.jpg",
                 drink: req.body.drink,
                 sugars: req.body.sugars,
                 milk: req.body.milks
