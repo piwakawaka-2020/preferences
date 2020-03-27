@@ -2,8 +2,6 @@ const express = require('express')
 const router = express.Router()
 const fs = require('fs')
 
-const data = require('../data.json')
-
 router.get('/', (req, res) => {
     fs.readFile('./data.json', 'utf8', (err, data) => {
         data = JSON.parse(data)
@@ -16,19 +14,20 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
-    const newPerson = {
-        name: req.body.name,
-        image: "/images/default.jpg",
-        drink: req.body.drink,
-        sugars: req.body.sugars,
-        milk: req.body.milks
-    }
     fs.readFile('./data.json', 'utf8', (err, data) => {
         if (err) console.log('An error has occurred')
-        data = JSON.parse(data)
-        data.people.push(newPerson)
-        const dataString = JSON.stringify(data, null, 2)
-        console.log(dataString)
+
+        const userData = JSON.parse(data)
+            const newPerson = {
+                id: userData.people.length + 1,
+                name: req.body.name,
+                image: "/images/default.jpg",
+                drink: req.body.drink,
+                sugars: req.body.sugars,
+                milk: req.body.milks
+            }
+        userData.people.push(newPerson)
+        const dataString = JSON.stringify(userData, null, 2)
         fs.writeFile('./data.json', dataString, err => {
             if (err) {
                 console.log('Error writing file', err)

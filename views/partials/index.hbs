@@ -19,5 +19,8 @@
             <a href="/profile/{{name}}"><p class='person brownBorder'>{{name}} - {{drink}}</p></a>
         </div>
         {{/each}}
+    {{#each people}}
+    <div>
+        <p><a href="/profile/{{id}}">{{name}}</a> - {{drink}}</p>
     </div>
 </div>
